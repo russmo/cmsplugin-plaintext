@@ -8,6 +8,7 @@ from cmsplugin_plaintext.models import CMSCharFieldPlugin, CMSTextFieldPlugin
 class CharFieldPlugin(CMSPluginBase):
     model = CMSCharFieldPlugin
     name = _('plaintext')
+    text_enabled = True
     render_template = 'cmsplugin_plaintext/text.html'
 
     def render(self, context, instance, placeholder):
@@ -21,6 +22,7 @@ class CharFieldPlugin(CMSPluginBase):
 class TextFieldPlugin(CMSPluginBase):
     model = CMSTextFieldPlugin
     name = _('plaintext text area')
+    text_enabled = True
     render_template = 'cmsplugin_plaintext/text.html'
 
     def render(self, context, instance, placeholder):
