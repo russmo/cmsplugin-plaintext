@@ -14,15 +14,16 @@ Requirements:
 
 Last tested with:
 
-* django-cms-3.0.3
-* django: 1.6.5
+* django-cms-3.0.13
+* django: 1.7.7
 
 Setup
 
 * make sure requirements are installed and properly working
 * add cmsplugin_plaintext to python path
 * add 'cmsplugin_plaintext' to INSTALLED_APPS
-* run 'python manage.py syncdb'
+* run 'python manage.py syncdb' for django<1.7
+* run 'python manage.py migrate' for django>=1.7
 
 Migrate from version 0.1 (and djangocms 2)
 
