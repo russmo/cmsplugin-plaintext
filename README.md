@@ -10,12 +10,12 @@ Forked/cloned to add django-cms 3 and south migrations support
 
 Requirements:
 
-* django-cms-3.0
+* django-cms-3.x
 
 Last tested with:
 
-* django-cms-3.0.13
-* django: 1.7.7
+* django-cms-3.4.1
+* django: 1.9.10
 
 Setup
 
